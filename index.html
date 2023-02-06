@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M2Lab2</title>
+    <link href="styles/script.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h2>The Employee Management Application</h2>
+    <form id="regForm">
+        <fieldset>
+            <legend>Add Employee</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="" size="30">&nbsp; <span id="requireName"></span><br><br>
+            <label for="title">Title:</label>
+            <input type="text" id="title" value="" size="30">&nbsp; <span id="requireTitle"></span><br><br>
+            <label for="extension">Extension:</label>
+            <input type="text" id="extension" value="" size="30" maxlength="4">&nbsp; <span id="requireExt"></span><br><br>
+            <input type="button" id="add" value="Add">
+        </fieldset>
+    </form>
+    <fieldset>
+    <legend id="qtyEmployee"></legend>
+    <table id="table">
+       <thead>
+        <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Extension</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="tblBody"></tbody>
+    </table>
+    </fieldset>
+</body>
+</html>
